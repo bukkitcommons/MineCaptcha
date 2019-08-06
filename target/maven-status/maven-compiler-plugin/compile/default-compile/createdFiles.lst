@@ -1,0 +1,9 @@
+com\mcsunnyside\MineCaptcha\MineCaptcha.class
+com\mcsunnyside\MineCaptcha\Database\BufferStatement.class
+com\mcsunnyside\MineCaptcha\Database\MySQLCore.class
+com\mcsunnyside\MineCaptcha\Database\PlayerQueryResult.class
+com\mcsunnyside\MineCaptcha\Database\Database$1.class
+com\mcsunnyside\MineCaptcha\BungeeListener.class
+com\mcsunnyside\MineCaptcha\Database\DatabaseHelper.class
+com\mcsunnyside\MineCaptcha\Database\Database$ConnectionException.class
+com\mcsunnyside\MineCaptcha\Database\Database.class

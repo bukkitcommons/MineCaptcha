@@ -1,0 +1,9 @@
+database:
+  host: localhost
+  port: 3306
+  database: minecaptcha
+  user: root
+  pass: 123456
+  tableprefix: minecaptcha_
+  usessl: false
+ip-strict-mode: true

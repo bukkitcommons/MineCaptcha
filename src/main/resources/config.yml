@@ -1,0 +1,24 @@
+database:
+  #数据库IP地址
+  host: localhost
+  #数据库端口
+  port: 3306
+  #数据库库名
+  database: minecaptcha
+  #数据库用户名
+  user: root
+  #数据库用户密码
+  pass: 123456
+  #数据库表前缀
+  tableprefix: minecaptcha_
+  #是否启用SSL安全连接，如您未配置数据库ssl，不建议开启
+  usessl: false
+#启用严格IP模式，一旦IP变动玩家需要重新进行验证，推荐开启
+#但是可能导致移动宽带玩家遇到一些困难
+ip-strict-mode: true
+#提示信息设置
+messages:
+  userVerifyFailed: "[MineCaptcha] 您还未进行过身份验证，请前往https://example.com/verify验证你的游戏ID"
+  ipVerifyFailed: "[MineCaptcha] 您的IP已发生变动，请前往https://example.com/verify重新验证你的游戏ID"
+  usernameNotMatched: "[MineCaptcha] 未知错误，游戏ID不匹配，请联系服务器管理员"
+  sqlFailed: "[MineCaptcha] 服务器内部错误，无法执行SQL查询，请联系服务器管理员"

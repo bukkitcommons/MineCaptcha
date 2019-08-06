@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>人机身份验证页面</title>
+    <link href="./css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--Google reCaptcha SITE_KEY，填写你从谷歌验证码管理员平台申请的SITE KEY，需和callback.php中保持一致-->
+    <script src="https://recaptcha.net/recaptcha/api.js?render=%SITE-KEY%"></script>
+    <script>
+        grecaptcha.ready(function () {
+            //Google reCaptcha SITE_KEY，填写你从谷歌验证码管理员平台申请的SITE KEY，需和callback.php中保持一致
+            grecaptcha.execute('%SITE-KEY%', { action: 'login' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="light-blue darken-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo left hide-on-med-and-down">某某服务器 - 人机身份验证
+		</a>
+    </div>
+</nav>
+
+<main>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center light-blue-text" id="status">正在加载</h1>
+            <div class="row center">
+                <form name="dataForm" id="dataForm" action="callback.php" method="POST">
+                    <label for="username_input">游戏ID:</label><input type="text" id="username_input" name="username">
+                    <!--suppress HtmlDeprecatedTag -->
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                    <a href="javascript:void(0)" id="submit-button" class="btn-large waves-effect light-blue" onclick="submitForm();">立即验证</a>
+                </form>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</main>
+
+<script>
+    var url = new URL(window.location.href);
+	//recaptcha.html?user=MCBBS
+    var username = url.searchParams.get("user");
+    if(username === null){
+        document.getElementById("status").innerHTML = "请输入你的游戏ID";
+
+    }else {
+	//这里我们检测到了使用了URL传参，自动填写用户名
+        document.getElementById("status").innerHTML = "您好：" + username;
+        document.getElementById("username_input").value=username;
+    }
+
+</script>
+<script>
+    function submitForm() {
+        var form = document.forms['dataForm'];
+        if(document.getElementById("username_input").value === null || document.getElementById("username_input").value === ""){
+            alert("你还没填游戏ID呢！")
+        }else{
+            form.submit();
+        }
+    }
+</script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script type="application/javascript">
+    $(document).ready(function() {
+        $('.modal').modal();
+    });
+</script>
+</body>
+</html>
