@@ -2,54 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6247d0b1-5052-41ad-81cd-dc8c404fb79c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/BungeeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/BungeeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/BungeeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/BungeeListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/BufferStatement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/BufferStatement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.ConnectionException.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.ConnectionException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/MySQLCore.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/MySQLCore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/PlayerQueryResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/PlayerQueryResult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/BufferStatement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/BufferStatement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.ConnectionException.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.ConnectionException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/DatabaseHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/DatabaseHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/MySQLCore.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/MySQLCore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/PlayerQueryResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/PlayerQueryResult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/MineCaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/MineCaptcha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/BungeeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/BungeeListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/MineCaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/MineCaptcha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/BungeeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/BungeeListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/MySQLCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/MySQLCore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="115" column="19" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="115" selection-end-column="19" />
+            <state relative-caret-position="545">
+              <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -85,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/BungeeListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+            <state relative-caret-position="360">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+            <state relative-caret-position="851">
+              <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="180">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,17 +143,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/BufferStatement.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bungee.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/PlayerQueryResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/MySQLCore.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/BungeeListener.java" />
       </list>
     </option>
@@ -336,12 +292,20 @@
       <workItem from="1565058068246" duration="1280000" />
       <workItem from="1565059694385" duration="12000" />
       <workItem from="1565405838115" duration="926000" />
-      <workItem from="1565615478106" duration="428000" />
+      <workItem from="1565615478106" duration="781000" />
     </task>
+    <task id="LOCAL-00001" summary="Add option limit">
+      <created>1565615941631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565615941631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12186000" />
+    <option name="totallyTimeSpent" value="12539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -376,16 +340,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add option limit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add option limit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bungee.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/MySQLCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -397,26 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -443,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="115" column="19" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="115" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -457,10 +391,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bungee.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/BungeeListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+        <state relative-caret-position="360">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

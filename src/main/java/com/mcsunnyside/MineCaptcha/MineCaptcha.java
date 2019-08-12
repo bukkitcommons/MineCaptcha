@@ -8,6 +8,8 @@ import lombok.SneakyThrows;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.YamlConfiguration;
+import org.bstats.bukkit.Metrics;
+import org.bstats.bungeecord.Metrics;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,12 +40,17 @@ public class MineCaptcha extends Plugin {
             getLogger().warning("Failed setup the database, aborting...");
         }
         getProxy().getPluginManager().registerListener(this,new BungeeListener(this));
+        /* Setup bStats */
+        try{
+            new Metrics(this);
+        }catch (Throwable th){
+            th.printStackTrace();
+        }
     }
 
     @Override
     @SneakyThrows
     public void onDisable() {
-        YamlConfiguration.getProvider(YamlConfiguration.class).save(config,configFile);
     }
 
     private boolean setupDatabase()  {

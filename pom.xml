@@ -14,6 +14,10 @@
             <id>bungeecord-repo</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+        <repository>
+            <id>CodeMC</id>
+            <url>https://repo.codemc.org/repository/maven-public</url>
+        </repository>
     </repositories>
     <build>
         <plugins>
@@ -31,7 +35,15 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <configuration>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <relocations>
+                        <relocation>
+                            <pattern>org.bstats</pattern>
+                            <!-- Replace this with your package! -->
+                            <shadedPattern>com.mcsunnyside.MineCaptcha</shadedPattern>
+                        </relocation>
+                    </relocations>
                 </configuration>
+
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -112,6 +124,12 @@
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>17.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bstats</groupId>
+            <artifactId>bstats-bungeecord</artifactId>
+            <version>1.5</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

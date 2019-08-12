@@ -2,9 +2,6 @@ package com.mcsunnyside.MineCaptcha;
 
 import com.mcsunnyside.MineCaptcha.Database.DatabaseHelper;
 import com.mcsunnyside.MineCaptcha.Database.PlayerQueryResult;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import net.md_5.bungee.Util;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.event.LoginEvent;
@@ -25,7 +22,7 @@ public class BungeeListener implements Listener {
     private int currentJoinedPlayers;
     private long lastResetTime;
 
-    public BungeeListener (MineCaptcha plugin){
+    BungeeListener (MineCaptcha plugin){
         this.plugin = plugin;
         this.MSG_userVerifyFailed = plugin.getConfig().getString("messages.userVerifyFailed");
         this.MSG_ipVerifyFailed = plugin.getConfig().getString("messages.ipVerifyFailed");
@@ -80,6 +77,8 @@ public class BungeeListener implements Listener {
                 e.setCancelled(true);
                 e.setCancelReason(kickMsg);
                 e.getConnection().disconnect(kickMsg);
+                //noinspection UnnecessaryReturnStatement
+                return;
             }
         }
 
