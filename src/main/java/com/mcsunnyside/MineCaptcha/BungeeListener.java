@@ -20,18 +20,32 @@ public class BungeeListener implements Listener {
     private String MSG_ipVerifyFailed;
     private String MSG_usernameNotMatched;
     private String MSG_sqlFailed;
+    private int maxJoinPlayers;
+    private int lastJoinedPlayers;
+    private int currentJoinedPlayers;
+    private long lastResetTime;
+
     public BungeeListener (MineCaptcha plugin){
         this.plugin = plugin;
         this.MSG_userVerifyFailed = plugin.getConfig().getString("messages.userVerifyFailed");
         this.MSG_ipVerifyFailed = plugin.getConfig().getString("messages.ipVerifyFailed");
         this.MSG_usernameNotMatched = plugin.getConfig().getString("messages.usernameNotMatched");
         this.MSG_sqlFailed = plugin.getConfig().getString("messages.MSG_sqlFailed");
+        this.maxJoinPlayers = plugin.getConfig().getInt("max-join-players");
     }
     //使用最低优先级，这样我们可以更早的处理事件
     //然后尽快取消和掐断链接，缓解服务器压力
     @EventHandler(priority = EventPriority.LOWEST)
     public void onJoin(LoginEvent e){
         if(e.isCancelled()) //忽略已经取消的事件，因为已经取消了就肯定会被踢了..
+            return;
+        currentJoinedPlayers++;
+        if(System.currentTimeMillis() - lastResetTime > 600000){
+            lastJoinedPlayers = currentJoinedPlayers;
+            currentJoinedPlayers = 0;
+            lastResetTime = System.currentTimeMillis();
+        }
+        if(lastJoinedPlayers < maxJoinPlayers)
             return;
         PlayerQueryResult result;
         String username = e.getConnection().getName();

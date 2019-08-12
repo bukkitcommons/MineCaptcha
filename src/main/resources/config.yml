@@ -16,6 +16,8 @@ database:
 #启用严格IP模式，一旦IP变动玩家需要重新进行验证，推荐开启
 #但是可能导致移动宽带玩家遇到一些困难
 ip-strict-mode: true
+#60秒内超过多少玩家加入，将会启用防御模式，设置为-1来使插件永远进行身份检查
+max-join-players: 10
 #提示信息设置
 messages:
   userVerifyFailed: "[MineCaptcha] 您还未进行过身份验证，请前往https://example.com/verify验证你的游戏ID"
