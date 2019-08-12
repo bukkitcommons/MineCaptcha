@@ -8,7 +8,6 @@ import lombok.SneakyThrows;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.YamlConfiguration;
-import org.bstats.bukkit.Metrics;
 import org.bstats.bungeecord.Metrics;
 
 import java.io.File;
