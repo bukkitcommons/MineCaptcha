@@ -42,7 +42,7 @@ public class BungeeListener implements Listener {
             currentJoinedPlayers = 0;
             lastResetTime = System.currentTimeMillis();
         }
-        if(lastJoinedPlayers < maxJoinPlayers)
+        if(lastJoinedPlayers < maxJoinPlayers && currentJoinedPlayers < maxJoinPlayers)
             return;
         PlayerQueryResult result;
         String username = e.getConnection().getName();
