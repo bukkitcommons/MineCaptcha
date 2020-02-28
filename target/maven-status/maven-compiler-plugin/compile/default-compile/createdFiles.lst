@@ -1,5 +1,6 @@
 com\mcsunnyside\MineCaptcha\MineCaptcha.class
 com\mcsunnyside\MineCaptcha\Database\BufferStatement.class
+com\mcsunnyside\MineCaptcha\MineCaptcha$1.class
 com\mcsunnyside\MineCaptcha\Database\MySQLCore.class
 com\mcsunnyside\MineCaptcha\Database\PlayerQueryResult.class
 com\mcsunnyside\MineCaptcha\Database\Database$1.class

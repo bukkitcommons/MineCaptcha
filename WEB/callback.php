@@ -94,15 +94,20 @@ alert(\"验证已完成\");
 
 }
 
+
 function setPlayerPassTheVerify(PDO $dbh, $db_tableprefix, $playerName, $ipaddress, $captcha_token)
 {
     global $debug;
     try {
+        list($msec, $sec) = explode(' ', microtime());
+        $msectime =  (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
+        $msectimes = substr($msectime,0,13);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $dbh->beginTransaction();
-        $stmt = $dbh->prepare("INSERT INTO " . $db_tableprefix . "info" . " (username, ipaddress) VALUES (:user_name, :ip_address) ON DUPLICATE KEY UPDATE username=:user_name, ipaddress=:ip_address");
+        $stmt = $dbh->prepare("INSERT INTO " . $db_tableprefix . "info" . " (username, ipaddress) VALUES (:user_name, :ip_address, :createtime) ON DUPLICATE KEY UPDATE username=:user_name, ipaddress=:ip_address, createtime=:createtime");
         $stmt->bindParam(":user_name", $playerName);
         $stmt->bindParam(":ip_address", $ipaddress);
+        $stmt->bindParam(":createtime", $msectimes);
         $stmt->execute();
         if ($stmt->columnCount() < 0) {
             $dbh->rollBack();
@@ -129,7 +134,8 @@ function createTables(PDO $dbh, $db_tableprefix)
         $dbh->beginTransaction();
         $dbh->exec("CREATE TABLE IF NOT EXISTS " . $db_tableprefix . "info" . "(
     username VARCHAR(255) PRIMARY KEY,
-    ipaddress VARCHAR(255)
+    ipaddress VARCHAR(255),
+    createtime BIGINT(255)
 )");
         $dbh->commit();
     } catch (Exception $e) {
@@ -142,7 +148,6 @@ function createTables(PDO $dbh, $db_tableprefix)
         }
     }
 }
-
 function send_post($url, $post_data)
 {
     $postdata = http_build_query($post_data);
