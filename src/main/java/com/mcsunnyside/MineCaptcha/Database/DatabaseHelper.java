@@ -11,8 +11,16 @@ import java.sql.Statement;
 public class DatabaseHelper {
     public static void createInfoTable(@NotNull Database db, @NotNull MineCaptcha plugin) throws SQLException {
         Statement st = db.getConnection().createStatement();
-        String createTable = "CREATE TABLE IF NOT EXISTS "+plugin.getConfig().getString("database.tableprefix")+"info"+" (username VARCHAR(255) NOT NULL PRIMARY KEY, ipaddress VARCHAR(255) NOT NULL)";
+        String createTable = "CREATE TABLE IF NOT EXISTS "+plugin.getConfig().getString("database.tableprefix")+"info"+" (username VARCHAR(255) NOT NULL PRIMARY KEY, ipaddress VARCHAR(255) NOT NULL, createtime BIGINT(255) NOT NULL)";
         st.execute(createTable);
+    }
+
+    public static void databaseCleanUp(@NotNull Database db, @NotNull MineCaptcha plugin){
+        try{
+            Statement st = db.getConnection().createStatement();
+            String createTable = "DELETE FROM "+plugin.getConfig().getString("database.tableprefix")+"info"+" WHERE createtime < "+(System.currentTimeMillis()-1800000)+";";
+            st.execute(createTable);
+        }catch (SQLException ignore){}
     }
 
 

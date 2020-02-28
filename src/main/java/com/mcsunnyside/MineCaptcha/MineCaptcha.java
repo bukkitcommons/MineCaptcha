@@ -15,12 +15,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.sql.SQLException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 @Getter
 public class MineCaptcha extends Plugin {
     private File configFile;
     private Configuration config;
     private Database database;
+    public static MineCaptcha instance;
     @Override
     @SneakyThrows
     public void onEnable() {
@@ -45,6 +48,12 @@ public class MineCaptcha extends Plugin {
         }catch (Throwable th){
             th.printStackTrace();
         }
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                DatabaseHelper.databaseCleanUp(database,instance);
+            }
+        }, 0, 1800000);
     }
 
     @Override
