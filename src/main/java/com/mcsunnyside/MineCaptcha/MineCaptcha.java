@@ -51,7 +51,9 @@ public class MineCaptcha extends Plugin {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                DatabaseHelper.databaseCleanUp(database,instance);
+                if(database != null) {
+                    DatabaseHelper.databaseCleanUp(database, instance);
+                }
             }
         }, 0, 1800000);
     }
