@@ -45,8 +45,7 @@ public class MineCaptcha extends Plugin {
         /* Setup bStats */
         try{
             new Metrics(this);
-        }catch (Throwable th){
-            th.printStackTrace();
+        }catch (Throwable ignore){
         }
         new Timer().schedule(new TimerTask() {
             @Override

@@ -104,9 +104,9 @@ function setPlayerPassTheVerify(PDO $dbh, $db_tableprefix, $playerName, $ipaddre
         $msectimes = substr($msectime,0,13);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $dbh->beginTransaction();
-        $stmt = $dbh->prepare("INSERT INTO " . $db_tableprefix . "info" . " (username, ipaddress) VALUES (:user_name, :ip_address, :createtime) ON DUPLICATE KEY UPDATE username=:user_name, ipaddress=:ip_address, createtime=:createtime");
+        $stmt = $dbh->prepare("INSERT INTO " . $db_tableprefix . "info" . " (username, ipaddress, createtime) VALUES (:user_name, :ipaddress, :createtime) ON DUPLICATE KEY UPDATE username=:user_name, ipaddress=:ip_address, createtime=:createtime");
         $stmt->bindParam(":user_name", $playerName);
-        $stmt->bindParam(":ip_address", $ipaddress);
+        $stmt->bindParam(":ipaddress", $ipaddress);
         $stmt->bindParam(":createtime", $msectimes);
         $stmt->execute();
         if ($stmt->columnCount() < 0) {
