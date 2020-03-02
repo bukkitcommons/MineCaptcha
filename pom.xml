@@ -125,11 +125,5 @@
             <artifactId>annotations</artifactId>
             <version>17.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bungeecord</artifactId>
-            <version>1.5</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 </project>

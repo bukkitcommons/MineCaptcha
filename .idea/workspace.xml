@@ -2,7 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6247d0b1-5052-41ad-81cd-dc8c404fb79c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/WEB/recaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/recaptcha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/BungeeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/BungeeListener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/BufferStatement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/BufferStatement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.ConnectionException.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.ConnectionException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/Database.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/MySQLCore.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/MySQLCore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/PlayerQueryResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/PlayerQueryResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/BufferStatement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/BufferStatement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.ConnectionException.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.ConnectionException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/Database.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/DatabaseHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/DatabaseHelper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/MySQLCore.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/MySQLCore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/PlayerQueryResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/class-use/PlayerQueryResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/Database/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/MineCaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/MineCaptcha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/BungeeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/BungeeListener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/MineCaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/class-use/MineCaptcha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/mcsunnyside/MineCaptcha/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/MineCaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/MineCaptcha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +140,7 @@
       <workItem from="1582889432903" duration="1434000" />
       <workItem from="1582890897885" duration="1518000" />
       <workItem from="1582954057134" duration="727000" />
-      <workItem from="1583148987737" duration="1037000" />
+      <workItem from="1583148987737" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="Add option limit">
       <created>1565615941631</created>
@@ -139,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583149120682</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ENGLISH">
+      <created>1583150973834</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583150973834</updated>
+    </task>
+    <task id="LOCAL-00008" summary="english">
+      <created>1583151163655</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583151163655</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +223,9 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="ENGLISH" />
+    <MESSAGE value="english" />
+    <option name="LAST_COMMIT_MESSAGE" value="english" />
   </component>
   <component name="WindowStateProjectService">
     <state x="645" y="234" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582889446176">
@@ -175,30 +236,30 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1559" y="575" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2048.1112@0.0.2048.1112" timestamp="1583149174618" />
-    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583151149465">
+    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583151163085">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="628" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583151149465" />
-    <state width="994" height="305" key="GridCell.Tab.0.bottom" timestamp="1582898647864">
+    <state x="628" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583151163085" />
+    <state width="753" height="295" key="GridCell.Tab.0.bottom" timestamp="1583154048605">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="994" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1582898647864" />
-    <state width="994" height="305" key="GridCell.Tab.0.center" timestamp="1582898647864">
+    <state width="753" height="295" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048605" />
+    <state width="753" height="295" key="GridCell.Tab.0.center" timestamp="1583154048604">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="994" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1582898647864" />
-    <state width="994" height="305" key="GridCell.Tab.0.left" timestamp="1582898647864">
+    <state width="753" height="295" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
+    <state width="753" height="295" key="GridCell.Tab.0.left" timestamp="1583154048604">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="994" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1582898647864" />
-    <state width="994" height="305" key="GridCell.Tab.0.right" timestamp="1582898647864">
+    <state width="753" height="295" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
+    <state width="753" height="295" key="GridCell.Tab.0.right" timestamp="1583154048604">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="994" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1582898647864" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583149122018">
+    <state width="753" height="295" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583151164766">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583149122018" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583151164766" />
   </component>
   <component name="masterDetails">
     <states>

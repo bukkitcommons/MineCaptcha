@@ -8,7 +8,6 @@ import lombok.SneakyThrows;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.YamlConfiguration;
-import org.bstats.bungeecord.Metrics;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,8 +24,8 @@ public class MineCaptcha extends Plugin {
     private Database database;
     public static MineCaptcha instance;
     @Override
-    @SneakyThrows
     public void onEnable() {
+        instance = this;
         //noinspection ResultOfMethodCallIgnored
         getDataFolder().mkdirs();
         configFile = new File(getDataFolder(),"config.yml");
@@ -37,16 +36,15 @@ public class MineCaptcha extends Plugin {
                 e.printStackTrace();
             }
         }
-        config = YamlConfiguration.getProvider(YamlConfiguration.class).load(configFile);
+        try {
+            config = YamlConfiguration.getProvider(YamlConfiguration.class).load(configFile);
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
         if(!setupDatabase()){
             getLogger().warning("Failed setup the database, aborting...");
         }
         getProxy().getPluginManager().registerListener(this,new BungeeListener(this));
-        /* Setup bStats */
-        try{
-            new Metrics(this);
-        }catch (Throwable ignore){
-        }
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
@@ -54,7 +52,7 @@ public class MineCaptcha extends Plugin {
                     DatabaseHelper.databaseCleanUp(database, instance);
                 }
             }
-        }, 0, 1800000);
+        }, 0, 30000);
     }
 
     @Override
