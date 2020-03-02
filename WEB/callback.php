@@ -1,73 +1,62 @@
 <?php
-//请勿在生产环境启用debug功能，可能导致敏感信息泄漏
 $debug = false;
 if (!$debug) {
-    //抑制生产环境下的PHP错误，避免引起敏感信息泄漏
     error_reporting(0);
 }
-//数据库类型，不可更改
 $db_type = "mysql";
-//数据库IP地址
 $db_host = "127.0.0.1";
-//数据库端口
 $db_port = 3306;
-//数据库库名
 $db_database = "minecaptcha";
-//数据库表前缀
 $db_tableprefix = "minecaptcha_";
-//数据库用户名
 $db_user = "root";
-//数据库密码
 $db_pass = "sunnyside666";
-//请勿修改DSN
 $db_dsn = "$db_type:host=$db_host;dbname=$db_database";
-
-//Google reCaptcha地址，默认使用国内源
+//For global user, replace to offical api link not chinese mirror
 $recaptcha_host = "https://recaptcha.net/recaptcha/api/siteverify";
-//Google reCaptcha SITE_KEY，填写你从谷歌验证码管理员平台申请的SITE KEY，需和recaptcha.html中保持一致
+
 $recaptcha_sitekey = "%SITE_KEY%";
-//Google reCaptcha SECRET_KEY，填写你从谷歌验证码管理员平台申请的SECRET KEY，请勿泄露
+
 $recaptcha_secret = "%SECERT_KEY%";
 
-//接收参数
+
 $data_user = $_POST['username'];
 $data_captchaToken = $_POST['recaptcha_response'];
 
-//null/empty 检查
+
 if ($data_user == null || $data_user == "" || $data_captchaToken == null || $data_captchaToken == "")
-    die("哼，肮脏的黑客!");
-//超长检查
+    die("No, you need submit something to there");
+
 if (mb_strlen($data_user) > 250)
-    die("想搞我？洗洗睡吧！");
-//在这里其实不用做特殊处理，后面咱们用PDO预处理语句，不用考虑XSS注入
+    die("Bump, dirty hacker");
+
 $captcha_response = send_post($recaptcha_host, array(
     'secret' => $recaptcha_secret,
     'response' => $data_captchaToken
 ));
 if ($captcha_response == null || $captcha_response == "")
-    die("服务器与Google reCaptcha通信失败");
+    die("Cannot connect to Google reCaptcha server");
 $decoded_captcha_response = json_decode($captcha_response, true);
 if ($decoded_captcha_response == null || $decoded_captcha_response == "")
-    die("内部错误，响应处理失败");
+    die("Internal Error");
 if ($decoded_captcha_response['success'] != true) {
     if (!$debug) {
-        die("验证失败");
+        die("Failed to verify");
     } else {
         var_dump($decoded_captcha_response);
-        die("验证失败");
+        die("Failed to verify");
     }
 }
 if ($decoded_captcha_response['score'] < 0.8) {
     if (!$debug) {
-        die("看起来你是很可疑的机器人，请重试");
+        die("Please retry, because seems you are robot.");
     } else {
         var_dump($decoded_captcha_response);
-        die("看起来你是很可疑的机器人，请重试");
+        die("Please retry, because seems you are robot.");
     }
 }
-//验证通过，处理MySQL数据
+
 try {
-    $dbh_pdo = new PDO($db_dsn, $db_user, $db_pass); //初始化一个PDO对象
+    $dbh_pdo = new PDO($db_dsn, $db_user, $db_pass);
     createTables($dbh_pdo, $db_tableprefix);
     setPlayerPassTheVerify($dbh_pdo, $db_tableprefix, $data_user, getUserIp(), $data_captchaToken);
     echo("<html>
@@ -80,16 +69,16 @@ try {
 alert(\"验证已完成\");
 //window.location.href=\"about:blank\";
     </script>
-    <h1>现在可以关闭此页面了</h1>
+    <h1>Now you can close this tab.</h1>
     </body>
     </html>
     ");
 } catch (PDOException $e) {
     if (!$debug) {
-        die ("与数据库连接失败");
+        die ("Failed connect to database");
     } else {
         echo str_replace($e->getTraceAsString(), "\n", "<br />");
-        die ("与数据库连接失败: " . $e->getMessage() . "<br/>");
+        die ("Failed connect to database: " . $e->getMessage() . "<br/>");
     }
 
 }
@@ -111,16 +100,16 @@ function setPlayerPassTheVerify(PDO $dbh, $db_tableprefix, $playerName, $ipaddre
         $stmt->execute();
         if ($stmt->columnCount() < 0) {
             $dbh->rollBack();
-            die("操作执行失败：没有预期的处理结果(" . $stmt->columnCount() . ")");
+            die("Failed, no except response(" . $stmt->columnCount() . ")");
         }
         $dbh->commit();
     } catch (Exception $e) {
         $dbh->rollBack();
         if (!$debug) {
-            die("数据库执行失败");
+            die("Failed execute sql query");
         } else {
             echo str_replace($e->getTraceAsString(), "\n", "<br />");
-            die ("SQL执行错误: " . $e->getMessage() . "<br/>");
+            die ("Failed execute sql query: " . $e->getMessage() . "<br/>");
         }
 
     }
@@ -141,10 +130,10 @@ function createTables(PDO $dbh, $db_tableprefix)
     } catch (Exception $e) {
         $dbh->rollBack();
         if (!$debug) {
-            die("数据库执行失败");
+            die("Failed execute sql query");
         } else {
             echo str_replace($e->getTraceAsString(), "\n", "<br />");
-            die ("SQL执行错误: " . $e->getMessage() . "<br/>");
+            die ("Failed execute sql query: " . $e->getMessage() . "<br/>");
         }
     }
 }
@@ -156,7 +145,7 @@ function send_post($url, $post_data)
             'method' => 'POST',
             'header' => 'Content-type:application/x-www-form-urlencoded',
             'content' => $postdata,
-            'timeout' => 10 * 60 // 超时时间（单位:s），服务器网络不好的话请调高这个
+            'timeout' => 10 * 60 // Timeout
         )
     );
     $context = stream_context_create($options);
