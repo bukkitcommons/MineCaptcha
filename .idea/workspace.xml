@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6247d0b1-5052-41ad-81cd-dc8c404fb79c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mcsunnyside/MineCaptcha/MineCaptcha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB/callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/callback.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MineCaptcha-1.0-SNAPSHOT-sources.jar" afterDir="false" />
@@ -47,6 +46,7 @@
       <change beforePath="$PROJECT_DIR$/target/apidocs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/Database/DatabaseHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/MineCaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mcsunnyside/MineCaptcha/MineCaptcha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-MineCaptcha-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +140,8 @@
       <workItem from="1582889432903" duration="1434000" />
       <workItem from="1582890897885" duration="1518000" />
       <workItem from="1582954057134" duration="727000" />
-      <workItem from="1583148987737" duration="2501000" />
+      <workItem from="1583148987737" duration="3411000" />
+      <workItem from="1583320168817" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="Add option limit">
       <created>1565615941631</created>
@@ -198,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583151163655</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Bug fix">
+      <created>1583154089516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583154089516</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,11 +229,11 @@
     <MESSAGE value="Add option limit" />
     <MESSAGE value="Add method to cleanup database" />
     <MESSAGE value="bug fix" />
-    <MESSAGE value="Bug fix" />
     <MESSAGE value="Update" />
     <MESSAGE value="ENGLISH" />
     <MESSAGE value="english" />
-    <option name="LAST_COMMIT_MESSAGE" value="english" />
+    <MESSAGE value="Bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="645" y="234" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582889446176">
@@ -236,30 +244,38 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1559" y="575" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2048.1112@0.0.2048.1112" timestamp="1583149174618" />
-    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583151163085">
+    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583154088637">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="628" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583151163085" />
-    <state width="753" height="295" key="GridCell.Tab.0.bottom" timestamp="1583154048605">
+    <state x="628" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583154088637" />
+    <state x="199" y="94" key="DiffContextDialog" timestamp="1583154077880">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="753" height="295" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048605" />
-    <state width="753" height="295" key="GridCell.Tab.0.center" timestamp="1583154048604">
+    <state x="199" y="94" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1583154077880" />
+    <state width="753" height="295" key="GridCell.Tab.0.bottom" timestamp="1583158143822">
+      <screen x="0" y="0" width="1368" height="728" />
+    </state>
+    <state width="753" height="295" key="GridCell.Tab.0.bottom/0.0.1368.728@0.0.1368.728" timestamp="1583158143822" />
+    <state width="753" height="295" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1583154102659" />
+    <state width="753" height="295" key="GridCell.Tab.0.center" timestamp="1583158143822">
+      <screen x="0" y="0" width="1368" height="728" />
+    </state>
+    <state width="753" height="295" key="GridCell.Tab.0.center/0.0.1368.728@0.0.1368.728" timestamp="1583158143822" />
+    <state width="753" height="295" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1583154102659" />
+    <state width="753" height="295" key="GridCell.Tab.0.left" timestamp="1583158143822">
+      <screen x="0" y="0" width="1368" height="728" />
+    </state>
+    <state width="753" height="295" key="GridCell.Tab.0.left/0.0.1368.728@0.0.1368.728" timestamp="1583158143822" />
+    <state width="753" height="295" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1583154102658" />
+    <state width="753" height="295" key="GridCell.Tab.0.right" timestamp="1583158143822">
+      <screen x="0" y="0" width="1368" height="728" />
+    </state>
+    <state width="753" height="295" key="GridCell.Tab.0.right/0.0.1368.728@0.0.1368.728" timestamp="1583158143822" />
+    <state width="753" height="295" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1583154102659" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583154091715">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="753" height="295" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
-    <state width="753" height="295" key="GridCell.Tab.0.left" timestamp="1583154048604">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="753" height="295" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
-    <state width="753" height="295" key="GridCell.Tab.0.right" timestamp="1583154048604">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="753" height="295" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1583154048604" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583151164766">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583151164766" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583154091715" />
   </component>
   <component name="masterDetails">
     <states>

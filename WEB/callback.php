@@ -1,23 +1,41 @@
 <?php
+//Debug option, enable this will shown error messages, but may cause data leaking.
+//Only enable it when you actually need.
 $debug = false;
 if (!$debug) {
     error_reporting(0);
 }
-$db_type = "mysql";
+
+//================DATABASE================//
+//Database Host
 $db_host = "127.0.0.1";
+//Database Port
 $db_port = 3306;
+//Database Database
 $db_database = "minecaptcha";
+//Database Prefix
 $db_tableprefix = "minecaptcha_";
+//Database User
 $db_user = "root";
-$db_pass = "sunnyside666";
-$db_dsn = "$db_type:host=$db_host;dbname=$db_database";
-//For global user, replace to offical api link not chinese mirror
-$recaptcha_host = "https://recaptcha.net/recaptcha/api/siteverify";
+//Database Password
+$db_pass = "12345678";
+//DSN, DO NOT TOUCH IT.
+$db_dsn = "mysql:host=$db_host;dbname=$db_database";
 
+//You site key from Google reCaptcha
 $recaptcha_sitekey = "%SITE_KEY%";
-
+//You secret key from Google reCaptcha
 $recaptcha_secret = "%SECERT_KEY%";
 
+$recaptcha_host = "https://www.google.com/recaptcha/api/siteverify";
+//For chinese user, there is google official mirror:
+//$recaptcha_host = "https://recaptcha.net/recaptcha/api/siteverify";
+
+
+
+
+
+//================CORE PART================//
 
 $data_user = $_POST['username'];
 $data_captchaToken = $_POST['recaptcha_response'];
@@ -59,14 +77,15 @@ try {
     $dbh_pdo = new PDO($db_dsn, $db_user, $db_pass);
     createTables($dbh_pdo, $db_tableprefix);
     setPlayerPassTheVerify($dbh_pdo, $db_tableprefix, $data_user, getUserIp(), $data_captchaToken);
+    //================ SUCCESS WEB PAGE================//
     echo("<html>
 <head>
-<title>成功</title>
+<title>Success</title>
 <meta charset=\"utf-8\"/>
 </head>
 <body>
 <script>
-alert(\"验证已完成\");
+alert(\"Successfully to verify your status, now you can back to game.\");
 //window.location.href=\"about:blank\";
     </script>
     <h1>Now you can close this tab.</h1>
